@@ -1,0 +1,250 @@
+.contact_form {
+    display: flex;
+    /* align-items: center; */
+    flex-wrap: wrap;
+    justify-content: space-between;
+    height: auto;
+    background-color: #F2F5FA;
+    padding: 10rem;
+}
+
+.contact_form .about {
+    width: 50%;
+    flex-basis: 500px;
+}
+
+.contact_form .about h1 {
+    font-size: 3.2rem;
+    font-weight: 800;
+    color: rgb(27, 31, 38);
+    text-transform: capitalize;
+}
+
+.contact_form .about h3 {
+    margin: 1.5rem 0 .5rem 0;
+    text-transform: capitalize;
+    font-size: 17px;
+    font-weight: 700;
+    color: rgb(27, 31, 38);
+}
+
+.contact_form .about p {
+    font-weight: 500;
+    color: rgb(65, 75, 91);
+    font-size: 15px;
+}
+
+.contact_form .about .id-box img {
+    width: 3rem;
+    height: 3rem;
+    border-radius: 50%;
+}
+
+.contact_form .about .id-box {
+    margin-top: 2rem;
+    background-color: #FFFFFF;
+    width: 50%;
+    border-radius: 10px;
+    padding: .1rem;
+    cursor: pointer;
+}
+
+.contact_form .about .id-box .profile {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    background-color: #F7F8FC;
+    padding: .5rem;
+    border-radius: 8px;
+    border: 1px solid rgb(224, 231, 241);
+}
+
+.contact_form .about .id-box .profile .details .name {
+    font-weight: 700;
+    color: rgb(27, 31, 38);
+}
+
+.contact_form .about .id-box .profile .details .post {
+    font-weight: 600;
+    color: rgb(65, 75, 91);
+    font-size: 14px;
+}
+
+.contact_form form {
+    width: 35%;
+    background-color: #FFFFFF;
+    height: 25rem;
+    padding: .1rem;
+    border-radius: 20px;
+}
+
+.contact_form form .massage-section {
+    background-color: #F7F8FC;
+    height: 100%;
+    border: 1px solid rgb(224, 231, 241);
+    border-radius: 20px;
+    padding: 1.2rem;
+}
+
+.contact_form .massage-section .names {
+    display: flex;
+    gap: 1rem;
+}
+
+
+
+.contact_form .massage-section :where(input, textarea) {
+
+    padding-left: .6rem;
+    margin-top: .5rem;
+    width: 100%;
+}
+
+.contact_form .massage-section label {
+    margin-left: -.2rem;
+    font-weight: 600;
+    color: rgb(27, 31, 38);
+    font-size: 15px;
+}
+
+
+.contact_form .massage-section :where(.email-section, .massage) {
+    margin-top: 1rem;
+}
+
+.contact_form .massage-section .names :where(.frist-name, .last-name) input {
+    background-color: #FFFFFF;
+    border: none;
+    outline: none;
+    height: 2.5rem;
+    border: 1px solid rgb(224, 231, 241);
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+.contact_form .massage-section :where(.email-section, .massage) :is(input, textarea) {
+    background-color: #FFFFFF;
+    border: none;
+    outline: none;
+    height: 2.5rem;
+    border: 1px solid rgb(224, 231, 241);
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+.contact_form .massage-section .massage textarea {
+    height: 7.5rem;
+    padding-top: .2rem;
+}
+
+.contact_form .massage-section .buttons {
+    margin-top: 1.5rem;
+}
+
+.contact_form .massage-section .buttons button {
+    font-size: 15px;
+    border: none;
+    outline: none;
+    border-radius: 50px;
+    background: linear-gradient(to left, rgb(247, 92, 123), rgb(244, 84, 73));
+    padding: .5rem 2rem;
+    font-weight: 600;
+    color: white;
+    cursor: pointer;
+    box-shadow: 0 0 2px rgb(247, 92, 123);
+    transition: .3s;
+}
+
+.contact_form .massage-section .buttons button:hover {
+
+    box-shadow: 0 0 5px rgb(247, 92, 123);
+}
+
+.contact_form .massage-section .result {
+    font-size: 14px;
+    margin-top: 1rem;
+}
+
+.contact_form h2 {
+    margin-top: 1.5rem;
+    color: rgb(27, 31, 38);
+    border-bottom: 2px solid rgb(111, 121, 138);
+    padding-bottom: .5rem;
+    padding: .5rem;
+    display: none;
+    font-size: 18px;
+}
+
+
+@media (max-width:1100px) {
+    .contact_form .about {
+        width: 40%;
+        flex-basis: 350px;
+    }
+
+    .contact_form .form {
+        width: 45%;
+
+    }
+
+    .contact_form {
+        padding: 5rem;
+        justify-content: center;
+    }
+
+    .contact_form .about h1 {
+        font-size: 2.5rem;
+    }
+
+    .contact_form h2 {
+        display: block;
+    }
+}
+
+@media (max-width: 800px) {
+    .contact_form .about {
+        width: 100%;
+        flex-basis: 100%;
+    }
+
+    .contact_form .form {
+        width: 100%;
+        margin-top: 2rem;
+    }
+
+    .contact_form {
+        padding: 2rem 4rem;
+    }
+
+    .contact_form .about h1 {
+        font-size: 2.5rem;
+    }
+}
+
+@media (max-width: 700px) {
+    .contact_form .about {
+        width: 100%;
+        flex-basis: 100%;
+    }
+
+    .contact_form .form {
+        width: 100%;
+        margin-top: 1rem;
+        border-radius: none;
+        padding: 0;
+    }
+
+
+
+    .contact_form .about .id-box {
+        width: 100%;
+    }
+
+    .contact_form {
+        padding: 1rem;
+    }
+
+    .contact_form .about h1 {
+        font-size: 2rem;
+    }
+}
